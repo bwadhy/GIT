@@ -8,11 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Mostrar mensagem
-        run: echo "rodando pipeline"
+      - name: Criar arquivo
+        run: echo "isso foi criado no pipeline" > arquivo.txt
 
-      - name: Mostrar arquivos
-        run: ls -la
+      - name: Mostrar arquivo
+        run: cat arquivo.txt
 
-      - name: Mostrar sistema
-        run: uname -a
+      - name: Upload do arquivo
+        uses: actions/upload-artifact@v4
+        with:
+          name: meu-arquivo
+          path: arquivo.txt
