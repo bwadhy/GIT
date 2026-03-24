@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-  - name: Mostrar mensagem
-    run: echo "rodando pipeline"
+      - name: Mostrar mensagem
+        run: echo "rodando pipeline"
 
-  - name: Listar arquivos
-    run: ls -la
+      - name: Listar arquivos
+        run: ls -la
