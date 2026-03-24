@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-  - name: Mostrar mensagem
-    run: echo "rodando pipeline"
+      - name: Mostrar mensagem
+        run: echo "rodando pipeline"
 
-  - name: Mostrar arquivos
-    run: ls -la
+      - name: Mostrar arquivos
+        run: ls -la
 
-  - name: Mostrar sistema
-    run: uname -a
+      - name: Mostrar sistema
+        run: uname -a
