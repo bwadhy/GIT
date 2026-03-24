@@ -1,0 +1,12 @@
+name: Teste
+
+on:
+  push:
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello
+        run: echo "rodando pipeline"
